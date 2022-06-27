@@ -102,6 +102,12 @@ frlElementFour.addEventListener('mouseleave', (e) => {
    buttonWrkFour.innerHTML = ''
 })
 
+const burgerTwoBottom = document.querySelector('.egl-bottom__burgerWraper')
+const eglRowListElement = document.querySelector('.egl-row__listElement')
+burgerTwoBottom.addEventListener('click', (e) => {
+   eglRowListElement.classList.toggle('egl-row__listElement__activi')
+});
+
 
 
 

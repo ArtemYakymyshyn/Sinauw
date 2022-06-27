@@ -35,13 +35,8 @@ body {
                .fs-elementOne {
                   width: 20%;
                   font-weight: 400;
+                  @include mainLogo;
                   font-size: 26.1239px;
-                  background: linear-gradient(180deg, #c7cafe 0%, #3d408f 100%);
-                  -webkit-background-clip: text;
-                  -webkit-text-fill-color: transparent;
-                  background-clip: text;
-                  text-fill-color: transparent;
-                  font-family: "Itim", cursive;
                   transition-duration: 0.5s;
                   @media (max-width: 768px) {
                      width: 46%;
@@ -908,6 +903,106 @@ body {
                      }
                   }
                }
+            }
+         }
+      }
+      .wrapper__eightsLine {
+         width: 100%;
+         margin-top: 100px;
+         position: relative;
+         .wrapper__eglWrk {
+            max-width: 1250px;
+            margin: 0px auto;
+            @media (max-width: 1278px) {
+               padding: 0 15px;
+            }
+            .wrapper__eglWrk__row {
+               display: flex;
+               justify-content: space-between;
+
+               .egl-row__mainElement {
+                  width: 30%;
+                  .egl-row__mainElement__logoText {
+                     @include mainLogo;
+                     margin-bottom: 8px;
+                  }
+                  .egl-row__mainElement__secondText {
+                     @include AuxillaryTextOfParags;
+                     text-align: left;
+                     margin-bottom: 24px;
+                  }
+               }
+               .egl-row__listElement {
+                  width: 60%;
+                  display: flex;
+                  justify-content: space-between;
+                  @media (max-width: 1278px) {
+                     width: 70%;
+                  }
+                  @media (max-width: 1120px) {
+                     position: absolute;
+                     bottom: 0;
+                     left: 0;
+                     width: 100%;
+                     background-color: red;
+                     display: none;
+                  }
+                  .egl-row__listElementUL {
+                     & li {
+                        margin-bottom: 20px;
+
+                        & a {
+                           @include bottomSubList;
+                           transition-duration: 0.5s;
+                           &:hover {
+                              @include textLinkHover;
+                           }
+                        }
+                     }
+                     .egl-row__listElementLI {
+                        @include bottomMainList;
+                     }
+                  }
+               }
+               .egl-row__listElement__activi {
+                  display: flex;
+               }
+               .egl-bottom__burgerWraper {
+                  width: 60px;
+                  height: 60px;
+                  background-color: white;
+                  border-radius: 50%;
+                  display: block;
+                  display: none;
+                  @media (max-width: 1120px) {
+                     display: block;
+                  }
+                  .egl-bottom__burger {
+                     display: flex;
+                     justify-content: space-around;
+                     flex-direction: column;
+                     align-items: center;
+                     width: 100%;
+                     height: 100%;
+                     & span {
+                        width: 35px;
+                        height: 4px;
+                        background-color: black;
+                     }
+                  }
+               }
+            }
+         }
+         .wrapper__eglWrkBottomParag {
+            margin-top: 86px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            & p {
+               font-weight: 400;
+               font-size: 16px;
+               line-height: 19px;
+               color: #8f91d0;
             }
          }
       }

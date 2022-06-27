@@ -1,3 +1,14 @@
+@mixin mainLogo {
+   background: linear-gradient(180deg, #c7cafe 0%, #3d408f 100%);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   background-clip: text;
+   text-fill-color: transparent;
+   font-weight: 400;
+   font-size: 37.3333px;
+   line-height: 150%;
+   font-family: "Itim", cursive;
+}
 @mixin textLinkHover {
    letter-spacing: 2.8px;
    color: crimson;
@@ -80,3 +91,15 @@
    line-height: 180%;
    color: rgba(255, 255, 255, 0.7);
 }
+@mixin bottomSubList {
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 24px;
+   color: rgba(255, 255, 255, 0.4);
+}
+@mixin bottomMainList {
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 24px;
+   color: rgba(255, 255, 255, 0.8);
+} ;
