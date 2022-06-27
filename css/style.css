@@ -1551,7 +1551,6 @@ body {
           transition-duration: 0.5s;
 }
 .wrapper .wrapper__container .wrapper__eightsLine .wrapper__eglWrk .wrapper__eglWrk__row .egl-row__listElement .egl-row__listElementUL li a:hover {
-  letter-spacing: 2.8px;
   color: crimson;
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;

@@ -955,7 +955,7 @@ body {
                            @include bottomSubList;
                            transition-duration: 0.5s;
                            &:hover {
-                              @include textLinkHover;
+                              @include textLinkHoverEinz;
                            }
                         }
                      }

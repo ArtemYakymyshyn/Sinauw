@@ -14,6 +14,10 @@
    color: crimson;
    transition-duration: 0.5s;
 }
+@mixin textLinkHoverEinz {
+   color: crimson;
+   transition-duration: 0.5s;
+}
 @mixin buttonHover {
    background-color: crimson;
    color: white;
